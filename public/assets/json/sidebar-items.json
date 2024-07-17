@@ -1,0 +1,39 @@
+[
+    {
+        "name": "Menu",
+        "isTitle": true
+      },
+      {
+        "name": "Dashboard",
+        "route": "dashboard",
+        "icon": "grid-fill"
+      },
+      {
+          "name": "Multi-level Menu",
+          "icon": "three-dots",
+          "submenu": [
+            {
+              "name": "First Level",
+              "submenu": [
+                {
+                  "name": "Second Level",
+                  "route": "multi-level-menu.first-level.second-level"
+                },
+                {
+                  "name": "Second Level Menu",
+                  "route": "multi-level-menu.first-level.second-level-menu"
+                }
+              ]
+            },
+            {
+              "name": "Another Menu",
+              "submenu": [
+                {
+                  "name": "Second Level Menu",
+                  "route": "multi-level-menu.another-menu.second-level-menu"
+                }
+              ]
+            }
+          ]
+      }
+]
