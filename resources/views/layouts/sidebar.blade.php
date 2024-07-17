@@ -6,7 +6,7 @@ $sidebarItems = json_decode($jsonData, true);
     <div class="sidebar-header position-relative">
         <div class="d-flex justify-content-between align-items-center">
             <div class="logo mt-2">
-                <a href="{{route ('dashboard')}}"><img src="" alt="Logo" id="logo" srcset="" style="width: 8rem; height: auto;" light-logo="{{asset('assets/static/images/logo/logoLight.png')}}" dark-logo="{{asset('assets/static/images/logo/logoDark.png')}}"></a>
+                <a href="{{route ('dashboard')}}"><img src="" alt="Logo" id="logo" srcset="" light-logo="{{asset('assets/static/images/logo/logoLight.png')}}" dark-logo="{{asset('assets/static/images/logo/logoDark.png')}}"></a>
             </div>
             <div class="theme-toggle d-flex gap-2  align-items-center mt-2">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
@@ -73,6 +73,16 @@ $sidebarItems = json_decode($jsonData, true);
                     </li>
                 @endif
             @endforeach
+            <li class="sidebar-item-logout">
+                <form id="logout-form" action="{{ route('dashboard') }}" method="GET" class="d-none">
+                    @csrf
+                </form>
+                <a class="sidebar-link"
+                    onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                    <i class="bi bi-box-arrow-right"></i>
+                    <span>Logout</span>
+                </a>
+            </li>
         </ul>
     </div>
 </div>
