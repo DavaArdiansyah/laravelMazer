@@ -123,6 +123,17 @@
                 }
             }
         }
+        .sidebar-item-logout {
+            list-style: none;
+            margin-top: 0.5rem;
+            position: fixed;
+            bottom: 0;
+            width: 14.78rem;
+            background-color: #fff;
+            border: 2px solid var(--bs-primary);
+            border-radius: 0.5rem;
+            cursor:pointer;
+        }
         .submenu {
             list-style: none;
             max-height: 0;

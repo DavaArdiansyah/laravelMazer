@@ -73,6 +73,16 @@ $sidebarItems = json_decode($jsonData, true);
                     </li>
                 @endif
             @endforeach
+            <li class="sidebar-item-logout">
+                <form id="logout-form" action="{{ route('dashboard') }}" method="GET" class="d-none">
+                    @csrf
+                </form>
+                <a class="sidebar-link"
+                    onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                    <i class="bi bi-box-arrow-right"></i>
+                    <span>Logout</span>
+                </a>
+            </li>
         </ul>
     </div>
 </div>
