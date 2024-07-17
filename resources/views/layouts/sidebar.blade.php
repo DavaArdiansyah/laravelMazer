@@ -5,8 +5,8 @@ $sidebarItems = json_decode($jsonData, true);
 <div class="sidebar-wrapper active">
     <div class="sidebar-header position-relative">
         <div class="d-flex justify-content-between align-items-center">
-            <div class="logo">
-                <a href="{{route ('dashboard')}}"><img src="{{asset('assets/static/images/logo/logo.svg')}}" alt="Logo" srcset=""></a>
+            <div class="logo mt-2">
+                <a href="{{route ('dashboard')}}"><img src="" alt="Logo" id="logo" srcset="" style="width: 8rem; height: auto;" light-logo="{{asset('assets/static/images/logo/logoLight.png')}}" dark-logo="{{asset('assets/static/images/logo/logoDark.png')}}"></a>
             </div>
             <div class="theme-toggle d-flex gap-2  align-items-center mt-2">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
