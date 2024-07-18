@@ -126,10 +126,11 @@
         .sidebar-item-logout {
             list-style: none;
             margin-top: 0.5rem;
+            margin-bottom: 1rem;
             position: fixed;
             bottom: 0;
             width: 14.78rem;
-            background-color: #fff;
+            background-color: $sidebar-bg;
             border: 2px solid var(--bs-primary);
             border-radius: 0.5rem;
             cursor:pointer;
